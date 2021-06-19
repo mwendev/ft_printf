@@ -6,7 +6,7 @@
 /*   By: mwen <mwen@student.42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/12 17:57:46 by mwen              #+#    #+#             */
-/*   Updated: 2021/06/19 16:00:28 by mwen             ###   ########.fr       */
+/*   Updated: 2021/06/19 16:29:06 by mwen             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include "libft/libft.h"
 # include <stdarg.h>
-
+# include <stdio.h>
 typedef struct s_flags
 {
 	int	type;

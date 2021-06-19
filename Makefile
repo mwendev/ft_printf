@@ -6,7 +6,7 @@
 #    By: mwen <mwen@student.42wolfsburg.de>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/18 13:06:29 by mwen              #+#    #+#              #
-#    Updated: 2021/06/18 17:21:22 by mwen             ###   ########.fr        #
+#    Updated: 2021/06/19 16:32:41 by mwen             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,8 @@ $(NAME):$(OBJS)
 		cp $(LIBFT) $(NAME)
 		ar rcs $(NAME) $(OBJS)
 		$(RM) $(OBJS)
+
+bonus:	$(NAME)
 
 clean:
 		$(RM) $(OBJS)
