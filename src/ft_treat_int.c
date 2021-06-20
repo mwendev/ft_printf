@@ -6,7 +6,7 @@
 /*   By: mwen <mwen@student.42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/17 14:40:28 by mwen              #+#    #+#             */
-/*   Updated: 2021/06/19 14:48:53 by mwen             ###   ########.fr       */
+/*   Updated: 2021/06/20 16:15:02 by mwen             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	ft_putcharint(char *nb, long long cp_nb, t_flags flags)
 	if (cp_nb < 0 && flags.dot >= 0)
 		ft_putchar('-');
 	if (flags.dot >= 0)
-		ret += ft_treat_width(flags.dot - 1, ft_strlen(nb) - 1, 1);
+		ret += ft_treat_width(flags.dot, ft_strlen(nb), 1);
 	ret += ft_putstrprec(nb, ft_strlen(nb));
 	return (ret);
 }
