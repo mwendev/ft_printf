@@ -6,7 +6,7 @@
 /*   By: mwen <mwen@student.42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 11:52:43 by mwen              #+#    #+#             */
-/*   Updated: 2021/06/19 16:55:03 by mwen             ###   ########.fr       */
+/*   Updated: 2021/06/21 22:04:42 by mwen             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_treat_types(t_flags flags, va_list args)
 		ret = ft_treat_string(va_arg(args, char *), flags);
 	else if (flags.type == 'p')
 		ret = ft_treat_pointer(va_arg(args, unsigned long long), flags);
-	else if (flags.type == 'd' | flags.type == 'i')
+	else if (flags.type == 'd' || flags.type == 'i')
 		ret = ft_treat_int(va_arg(args, int), flags);
 	else if (flags.type == 'u')
 		ret += ft_treat_uint(va_arg(args, unsigned int), flags);
