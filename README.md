@@ -2,7 +2,7 @@
 
 ## Info
 
-Remake of printf. A simpler version
+Remake of printf using va_list
 
 - Grade: 100/100
 - Keywords: Unix logic
